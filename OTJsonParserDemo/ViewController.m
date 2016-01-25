@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OTJsonParser.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,15 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    NSDictionary *dictionary = @{@"key": @"value", @"key2": @"value2"};
+    NSString *jsonString = [dictionary JSONString];
+    NSDictionary *jsonObject = [jsonString objectFromJSONString];
+    
+    NSLog(@"\nJSONString: \n%@\n\nobjectFromJSONString:\n%@", jsonString, jsonObject);
 }
 
 @end
