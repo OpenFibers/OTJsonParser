@@ -13,6 +13,7 @@
 		423983431C560BC400D17DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423983411C560BC400D17DD4 /* Main.storyboard */; };
 		423983451C560BC400D17DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423983441C560BC400D17DD4 /* Assets.xcassets */; };
 		423983481C560BC400D17DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423983461C560BC400D17DD4 /* LaunchScreen.storyboard */; };
+		423983521C560C3B00D17DD4 /* OTJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 423983511C560C3B00D17DD4 /* OTJsonParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		423983441C560BC400D17DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		423983471C560BC400D17DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		423983491C560BC400D17DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423983501C560C3B00D17DD4 /* OTJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTJsonParser.h; sourceTree = "<group>"; };
+		423983511C560C3B00D17DD4 /* OTJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTJsonParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		4239832C1C560BC400D17DD4 = {
 			isa = PBXGroup;
 			children = (
+				4239834F1C560C3B00D17DD4 /* OTJsonParser */,
 				423983371C560BC400D17DD4 /* OTJsonParserDemo */,
 				423983361C560BC400D17DD4 /* Products */,
 			);
@@ -77,6 +81,15 @@
 				423983391C560BC400D17DD4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4239834F1C560C3B00D17DD4 /* OTJsonParser */ = {
+			isa = PBXGroup;
+			children = (
+				423983501C560C3B00D17DD4 /* OTJsonParser.h */,
+				423983511C560C3B00D17DD4 /* OTJsonParser.m */,
+			);
+			path = OTJsonParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 				423983401C560BC400D17DD4 /* ViewController.m in Sources */,
 				4239833D1C560BC400D17DD4 /* AppDelegate.m in Sources */,
 				4239833A1C560BC400D17DD4 /* main.m in Sources */,
+				423983521C560C3B00D17DD4 /* OTJsonParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
